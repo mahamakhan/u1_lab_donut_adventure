@@ -13,7 +13,7 @@ class Hero {
   }
 
   talkSass() {
-    console.log(this.catchPhrases)
+    console.log(this.catchPhrases[Math.round(Math.random())])
   }
   announceHealth() {
     return this.health
@@ -22,6 +22,7 @@ class Hero {
     console.log("i'm ready to rumble")
   }
 }
+const dougie = new Hero('Dougie the donut')
 
 class Enemy {
   constructor(name) {
