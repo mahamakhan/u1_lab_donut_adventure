@@ -13,6 +13,9 @@ class Hamster {
   getPrice() {
     return this.price
   }
+  newOwner() {
+    this.owner = 'Timmy'
+  }
 }
 
 class Person {
@@ -53,7 +56,30 @@ class Person {
   }
   buyHamster(hamster) {
     return this.hamster.push(hamster)
-    this.mood + 10
-    this.bankAccount - getPrice()
+    this.mood += 10
+    this.bankAccount -= getPrice()
   }
 }
+const timmy = new Person('Timmy')
+for (let i = 0; i < 5; i++) {
+  ageup()[i]
+  exercise()[i]
+  eat()[i]
+}
+console.log(timmy)
+
+for (let i = 0; i < 9; i++) {
+  timmy.ageUp()
+}
+const gus = new Hamster('Gus')
+gus.owner = timmy.name
+timmy.buyHamster(Gus)
+
+for (let i = 0; i < 15; i++) {
+  timmy.ageUp()
+}
+
+timmy.eat()
+timmy.eat()
+timmy.exercise()
+timmy.exercise()
