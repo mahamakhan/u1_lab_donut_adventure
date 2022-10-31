@@ -38,9 +38,18 @@ class Enemy {
     ]
   }
   talkSmack() {
-    console.log(Enemy.this.catchPhrases)
+    console.log(Enemy.this.catchPhrases[Math.round(Math.random())])
   }
   announceHealth() {
     console.log("i'm gonna flatten you like a slice of pepperoni!")
   }
+  battle() {
+    console.log("i'm gonna flatten you like a slice of pepperoni!")
+  }
 }
+const pizza = new Enemy('Pizza Rat')
+
+dougie.talkSass()
+pizza.talkSmack()
+dougie.announceHealth()
+pizza.announceHealth()
